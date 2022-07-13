@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./index.css">
+    <title>Music App</title>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="menu_side">
+            <h1>Playlist</h1>
+            <div class="playlist">
+                <h4 class="active"><span></span><i class="bi bi-music-note-beamed"></i>Playlist</h4>
+                <h4><span></span><i class="bi bi-music-note-beamed"></i>Last Listening</h4>
+                <h4><span></span><i class="bi bi-music-note-beamed"></i>Recommended</h4>
+            </div>
+            <div class="menu_song">
+                <li class="songItem">
+                    <span>01</span>
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABsbGxscGx4hIR4
+                            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"
+                        alt="">
+                    <h5>
+                        On My Way
+                        <div class="subtitle">Alan Walker</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="1"></i>
+
+                </li>
+                <li class="songItem">
+                    <span>02</span>
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABsbGxscGx4hIR4
+                            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"
+                        alt="">
+                    <h5>
+                        On My Way
+                        <div class="subtitle">Alan Walker</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="2"></i>
+
+                </li>
+                <li class="songItem">
+                    <span>03</span>
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABsbGxscGx4hIR4
+                            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"
+                        alt="">
+                    <h5>
+                        On My Way
+                        <div class="subtitle">Alan Walker</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="3"></i>
+
+                </li>
+                <li class="songItem">
+                    <span>04</span>
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABsbGxscGx4hIR4
+                            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"
+                        alt="">
+                    <h5>
+                        On My Way
+                        <div class="subtitle">Alan Walker</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="4"></i>
+
+                </li>
+                <li class="songItem">
+                    <span>05</span>
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABsbGxscGx4hIR4
+                            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"
+                        alt="">
+                    <h5>
+                        On My Way
+                        <div class="subtitle">Alan Walker</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="5"></i>
+
+                </li>
+                <li class="songItem">
+                    <span>06</span>
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABsbGxscGx4hIR4
+                            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"
+                        alt="Alan">
+                    <h5>
+                        On My Way
+                        <div class="subtitle">Alan Walker</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="6"></i>
+
+                </li>
+            </div>
+        </div>
+
+        <div class="song_side">
+            <nav>
+                <ul>
+                    <li>Discover<span></span></li>
+                    <li>My Library</li>
+                    <li>Radio</li>
+                </ul>
+                <div class="search">
+                    <i class="bi bi-search"></i>
+                    <input type="text" placeholder="Search Music...">
+                </div>
+                <div class="user">
+                    <img src="https://th.bing.com/th/id/OIP.cRIcNRpiftaP1n_SwIAW3wHaE7?w=
+                            234&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="User" title="Love">
+                </div>
+            </nav>
+            <div class="content">
+                <h1>Alen walker-Fade</h1>
+                <p>Yo were the shadow to my light Did you feel us Another start you Fade
+                    <br> Away afraid our aim is out of sight Wanna see us Alive.
+                </p>
+                <div class="buttons">
+                    <button>Play</button>
+                    <button>Follow</button>
+                </div>
+            </div>
+            <div class="popular_song">
+                <div class="h4">
+                    <h4>Popular Song</h4>
+                    <div class="btn_s">
+                        <i id="left_scroll" class="bi bi-arrow-left-short"></i>
+                        <i id="right_scroll" class="bi bi-arrow-right-short"></i>
+                    </div>
+                </div>
+                <div class="pop_song">
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABsbGxscGx4hIR4
+                            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"
+                                alt="Alan">
+                            <i class="bi playListPlay bi-play-circle-fill" id="7"></i>
+                        </div>
+
+                    </li>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="master_play">
+            <div class="wave">
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+            </div>
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABsbGxscGx4hIR4
+                    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"
+                alt="Alan">
+            <h5>On My Way <br>
+                <div class="subtitle">Alan Walker</div>
+            </h5>
+            <div class="icon">
+                <i class="bi bi-skip-start-fill"></i>
+                <i class="bi bi-play-fill"></i>
+                <i class="bi bi-skip-end-fill"></i>
+            </div>
+            <span id="currentStart">0:00</span>
+            <div class="bar">
+                <input type="range" id="seek" min="0" value="0" max="100">
+                <div class="bar2" id="bar2"></div>
+                <div class="dot"></div>
+            </div>
+            <span id="currentEnd">0:00</span>
+            <div class="vol">
+                <i class="bi bi-volume-down-fill"></i>
+                <input type="range" id="vol" min="0" value=30 " max="100 ">
+                <div class="vol_bar "></div>
+                <div class="dot " id=" vol_dot "></div>
+            </div>
+
+        </div>
+    </header>
+
+
+</body>
+
+</html>
